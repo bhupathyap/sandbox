@@ -1,0 +1,378 @@
+@font-face{
+font-family:segoe ui;
+src:url('Segoe UI Semibold.ttf');
+
+
+}
+
+body{
+	background:#fff;
+	color:#000;
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	line-height:18px;
+	letter-spacing:1px;
+	width:100%;
+	min-width:600px;
+
+font-family:segoe ui;
+
+}
+h2 {
+	font-family:segoe ui;
+}
+a , a:visited{
+	color:#A4D319;
+	text-decoration:none;
+}
+#header{
+	height:150px;
+	width:100%;
+	clear:both;
+	float:left;
+	z-index:100;
+}
+/* column container */
+.colmask {
+margin-top:50px;
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	padding-bottom:10px;
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 0 0;
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	/*background:#eee;*/		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	/*background:#fff;*/		/* center column background colour */
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	/*background:#f4f4f4;*/	/* left column background colour */
+}
+.threecol .col1 {
+	width:48%;			/* width of center column content (column width minus padding on either side) */
+	left:101%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:24%;			/* Width of left column content (column width minus padding on either side) */
+	left:27%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:23%;			/* Width of right column content (column width minus padding on either side) */
+	left:79%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+/* Footer styles */
+#footer {	background:#04070a;
+	padding-top:7px;
+	text-align:center;
+	font-size:14px;
+	height:25px;
+	left:0px;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	color:#fff;
+	font-weight:100;
+}
+.box {
+	font-size: 14px;
+	margin:auto 
+}
+input.textbox{
+	font-family: 'Droid Sans', sans-serif;
+	padding-left:6px;
+	height:30px;
+	border:groove;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+input.textbox:focus {
+	outline:none;
+}
+.button {
+	font-family:'Aldrich', sans-serif;
+	font-weight:bold;
+	width:151px;
+	height:37px;
+	padding-top:3px;
+	color:#2995c3;
+	background:url(button.png) no-repeat;
+	border:none;
+}
+.button:hover {
+	color:#fff;
+	background:url(buttonmouseover.png) no-repeat -2px;
+}
+#login {
+	padding:5 15 5 15;
+	width:50%;
+	margin:auto;
+	position:relative;
+}
+#regform{
+	margin:auto;
+}
+#tablereg{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	margin:auto;
+}
+#tablereg tr {
+	height:40px;
+}
+#tablereg td {
+	width:50%;
+}
+#tablelogin 
+{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	margin:auto;
+}
+#tablelogin tr
+{
+	height:40px;
+}
+#tablelogin td {
+	width:50%;
+}
+#leaderboard {
+	width:600px;
+	display:block;
+	margin:auto;
+	text-align:center;
+}
+#leaderboard tr.first {
+	color:#e2efcf;
+	height:40px;
+}
+#navbar{
+		font-weight:100;
+	font-size:15px;
+	width:600px;
+	display:inline;
+	list-style:none;
+	padding:0;
+	margin:0;
+padding-top:10px;
+position:absolute;
+}
+#navbar li {
+padding-left:20px;
+display:inline;
+	
+	
+}
+#navbar a {
+color:#fff;	
+	
+	width:100px;
+	-webkit-transition: color 0.2s ease;
+  	-moz-transition: color 0.2s ease;
+  	-o-transition: color 0.2s ease;
+ 	transition: color 0.2s ease;
+
+}
+#navbar a, #navbar a:visited{
+
+	
+	text-decoration:none;
+}
+#navbar a:hover {
+	color:#A4D319;
+}
+#navbar li:hover {
+	}
+#center_contentplayer{
+	padding:5 15 5 15;
+	/*border:thin #000 solid;*/
+	float:left;
+	text-align:center;
+	top:8%;
+	margin-left:10%;
+	position:absolute;
+	overflow:auto;
+	padding-bottom:40px;
+	
+}
+#center_contentplayer img{
+
+box-shadow:0 0 10px #000;
+border-radius:8px;
+width:580px;
+height:435px;
+
+}
+
+#center_content{
+	padding:5 15 5 15;
+	
+	margin:auto;
+	text-align:center;
+	top:30%;
+	padding-bottom:40px;
+}
+#center_contentadmin{
+	padding:5 15 5 15;
+	margin:auto;
+	position:relative;
+	padding-bottom:40px;
+}
+#sidebaradmin{
+	padding:5 15 5 15;
+	width:200px;
+	margin:auto;
+	right:0;
+	position:relative;
+	z-index:100;
+}
+#welcome{
+	display:nline;
+	color:#fff;
+	font-size:14px;
+float:right;
+padding-top:10px;
+padding-right:15px;
+}
+
+#watermarkleft{
+/*	background:url(left.jpg) no-repeat top;*/
+	background-position:-100px 0;
+	width:523px;
+	height:1000px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	opacity:.6;
+	z-index:-100;
+}
+#watermarkright{
+/*	background:url(right.jpg) no-repeat right;*/
+	width:100%;
+	height:1000px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	opacity:.6;
+	z-index:-100;
+}
+#logo{
+	background:url(logo1.png) no-repeat;
+	width:340px;
+	height:75px;
+	margin-left:auto;
+	
+	margin-right:auto;
+	margin-top:80px;
+	margin-down:100px;
+
+	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	-o-transition: all 0.3s ease;
+ 	transition: all 0.3s ease;
+ 	z-index:100;
+}
+img {
+	border:none;
+}
+input[type="submit"]{
+
+padding:10px;
+padding-top:6px;
+padding-bottom:6px;
+border-radius:5px;
+background:#8BBD3A;
+cursor:pointer;
+box-shadow:0 0 10px #000;
+text-transform:uppercase;
+}
+input[type="text"]{
+
+padding:6px;
+padding-left:10px;
+padding-right:10px;
+border-radius:5px;
+background:#fff;
+margin-left:20px;
+
+}
+input[type="text"]:focus { 
+outline:0px;
+border: 2px solid #A4D319;
+ 
+    box-shadow: 0px 0px 10px #A4D319; }
+input[type="password"]{
+
+padding:6px;
+padding-left:10px;
+padding-right:10px;
+border-radius:5px;
+background:#fff;
+margin-left:20px;
+
+
+}
+input[type="password"]:focus { 
+outline:0px;
+border: 2px solid #A4D319;
+ 
+    box-shadow: 0px 0px 10px #A4D319; }
+	
+	
+	
+#hbar{
+
+position:absolute;
+height:40px;
+background:#000;
+top:0px;
+width:100%;
+
+}
+table {
+border:0px;
+}
+td{
+padding:10px;
+border:0px;
+}
+th{
+border:0px;
+padding:10px;
+}
+tr:nth-child(even){
+background:#A4D319;
+}
+tr:nth-child(odd){
+background:#ccc;
+}
+form table tr:nth-child(odd){
+	background:none;
+}
+form table tr:nth-child(even){
+	background:none;
+}
